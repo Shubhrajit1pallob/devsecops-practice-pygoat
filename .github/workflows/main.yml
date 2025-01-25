@@ -49,7 +49,7 @@ jobs:
         uses: docker/scout-action@v1.16.1
         with: 
           command: quickview, cves
-          image: ${{ steps.meta.outputs.tags }}
+          image: myapp:latest
           to-latest: true
           
 
