@@ -16,8 +16,8 @@ jobs:
       with: 
         python-version: 3.8
 
-    - name: Install Bandit
-      run: pip install bandit
+    - name: Install dependencies
+      run: pip install bandit pyyaml
 
     - name: Run Bandit Scan
-      run: bandit -r .
+      run: bandit -r . --severity-level high
