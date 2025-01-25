@@ -20,4 +20,4 @@ jobs:
       run: pip install bandit pyyaml
 
     - name: Run Bandit Scan
-      run: bandit -r . --severity-level high
+      run: bandit -ll -ii -r .
